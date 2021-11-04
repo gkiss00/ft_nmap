@@ -19,6 +19,8 @@
 # include <netinet/ip_icmp.h>
 # include <math.h>
 # include <stdbool.h>
+# include <pcap.h>
+# include <netinet/if_ether.h>
 
 typedef struct          s_target
 {

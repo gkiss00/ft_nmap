@@ -11,10 +11,12 @@ NAME				= ft_nmap
 
 FLAGS				= -Wall -Wextra -Werror
 
+LIBS				= -lpcap -lpthread
+
 all :				${NAME}
 
 ${NAME} :			${OBJS}
-					gcc -o ${NAME} ${FLAGS} ${SRCS}
+					gcc -o ${NAME} ${FLAGS} ${LIBS} ${SRCS}
 
 clean :				
 					rm -rf ${OBJS}
